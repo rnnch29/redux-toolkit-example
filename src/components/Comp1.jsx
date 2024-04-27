@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 function Comp1() {
 
     // access Store 
-    const { userReducer} = useSelector((state)=>({...state}))
+    const userReducer = useSelector((state)=>(state.userReducer))
 
   return (
     <div>

@@ -5,7 +5,7 @@ import { increase, decrease } from '../store/counterSlice';
 
 function Comp3() {
 
-    const { counterReducer } = useSelector((state) => ({ ...state }))
+    const counterReducer = useSelector((state) => state.counterReducer)
 
     const dispatch = useDispatch();
 
