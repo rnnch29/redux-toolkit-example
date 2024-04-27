@@ -13,7 +13,6 @@ export const userSlice =  createSlice({
     name: 'userStore',
     initialState: initialState,
     reducers: {
-        // function 
         login:(state, action)=>{
             state.value = 'Login';
             state.user = action.payload
