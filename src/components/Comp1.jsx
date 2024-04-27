@@ -5,15 +5,15 @@ import { useSelector } from 'react-redux'
 function Comp1() {
 
     // access Store 
-    const { userStore} = useSelector((state)=>({...state}))
+    const { userReducer} = useSelector((state)=>({...state}))
 
   return (
     <div>
         <h1 className='text-2xl'>Component 1</h1>
         <br />
-        Store:  { userStore.value }
+        Store:  { userReducer.value }
         <br />
-        {userStore.loading ? <p>Loading true</p>: <p>False
+        {userReducer.loading ? <p>Loading true</p>: <p>False
         </p> }
     </div>
   )

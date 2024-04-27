@@ -13,11 +13,9 @@ function Comp2() {
     const dispatch = useDispatch()
 
     const handleLogin = () => {
-        // use function login 
         dispatch(login(user))
     }
     const handleLogout = () => {
-        // use function login 
         dispatch(logout())
     }
 
